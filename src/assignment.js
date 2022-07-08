@@ -13,19 +13,16 @@ const assignment = {};
  * @param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
-let arrayOfNumbers = [2, 3, 4, 5, 6,10]
-console.log("This is my array of numbers: " + arrayOfNumbers);
+let numbers = [2, 3, 4, 5, 6,10]
 
-function sumOfNumbers(arrayOfNumbers) {
-    // console.log (arrayOfNumbers.length)
-    // console.log (arrayOfNumbers[0] + arrayOfNumbers[1] + arrayOfNumbers[2])
+function sumOfNumbers(numbers) {
   let sum = 0;
-  for( i=0; i < arrayOfNumbers.length; i++){
-    sum += arrayOfNumbers[i]
+  for( i=0; i < numbers.length; i++){
+    sum += numbers[i]
   }
-  return ("The sum of the numbers in this array is: " + sum)
+  return sum;
 }
-sumOfNumbers(arrayOfNumbers)
+sumOfNumbers(numbers)
 
 
 /**
@@ -39,22 +36,22 @@ sumOfNumbers(arrayOfNumbers)
  */
 
 
-function countEvenNumbers(arrayOfNumbers) {
-    let evenNumbers = arrayOfNumbers.filter((n) => n % 2 == 0);
-  console.log("These are the even numbers in my array of numbers: " + evenNumbers)
-  console.log("The number of even numbers in my array of numbers is: " + evenNumbers.length)
-}
+// function countEvenNumbers(arrayOfNumbers) {
+//     let evenNumbers = arrayOfNumbers.filter((n) => n % 2 == 0);
+//   console.log("These are the even numbers in my array of numbers: " + evenNumbers)
+//   console.log("The number of even numbers in my array of numbers is: " + evenNumbers.length)
+// }
 
-countEvenNumbers(arrayOfNumbers)
+// countEvenNumbers(arrayOfNumbers)
 
 
-function countOddNumbers(arrayOfNumbers) {
-    let oddNumbers = arrayOfNumbers.filter((n) => n % 2 == 1);
-  console.log("These are the odd numbers in my array of numbers: " + oddNumbers)
-  console.log("The number of odd numbers in my array of numbers is: " + oddNumbers.length)
-}
+// function countOddNumbers(arrayOfNumbers) {
+//     let oddNumbers = arrayOfNumbers.filter((n) => n % 2 == 1);
+//   console.log("These are the odd numbers in my array of numbers: " + oddNumbers)
+//   console.log("The number of odd numbers in my array of numbers is: " + oddNumbers.length)
+// }
 
-countOddNumbers(arrayOfNumbers)
+// countOddNumbers(arrayOfNumbers)
 
 
 /**

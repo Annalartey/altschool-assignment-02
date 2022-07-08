@@ -23,7 +23,7 @@ function sumOfNumbers(arrayOfNumbers) {
   for( i=0; i < arrayOfNumbers.length; i++){
     sum += arrayOfNumbers[i]
   }
-  console.log ("The sum of the numbers in this array is: " + sum)
+  return ("The sum of the numbers in this array is: " + sum)
 }
 sumOfNumbers(arrayOfNumbers)
 

@@ -22,7 +22,7 @@ function sumOfNumbers(numbers) {
   }
   return sum;
 }
-sumOfNumbers(numbers)
+assignment.sumOfNumbers = sumOfNumbers
 
 
 /**
@@ -36,22 +36,16 @@ sumOfNumbers(numbers)
  */
 
 
-// function countEvenNumbers(arrayOfNumbers) {
-//     let evenNumbers = arrayOfNumbers.filter((n) => n % 2 == 0);
-//   console.log("These are the even numbers in my array of numbers: " + evenNumbers)
-//   console.log("The number of even numbers in my array of numbers is: " + evenNumbers.length)
-// }
+function countEvenNumbers(numbers) {
+    let evenNumbers = numbers.filter((n) => n % 2 == 0);
+  console.log("These are the even numbers in my array of numbers: " + evenNumbers)
+  console.log("The number of even numbers in my array of numbers is: " + evenNumbers.length)
 
-// countEvenNumbers(arrayOfNumbers)
+  return evenNumbers.length;
+}
 
+assignment.countEvenNumbers = countEvenNumbers
 
-// function countOddNumbers(arrayOfNumbers) {
-//     let oddNumbers = arrayOfNumbers.filter((n) => n % 2 == 1);
-//   console.log("These are the odd numbers in my array of numbers: " + oddNumbers)
-//   console.log("The number of odd numbers in my array of numbers is: " + oddNumbers.length)
-// }
-
-// countOddNumbers(arrayOfNumbers)
 
 
 /**
